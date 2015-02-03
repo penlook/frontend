@@ -5,25 +5,26 @@
  * Author : Loi Nguyen <loint@penlook.com>
  */
 
-library penlook.test;
+library frontend.test;
 
 import "package:unittest/unittest.dart";
 import "package:frontend/frontend.dart";
 
 main() {
 
-  group('SAMPLE TEST GROUP', () {
-    Person boy;
+    group('SAMPLE TEST GROUP', () {
 
-    setUp(() {
-        boy = new Person("NamVH");
-        boy.setAge(20);
-    });
+        Person boy;
 
-    test('TEST 1', () {
-        expect(boy.getName(), "NamVH");
-        expect(boy.getAge(), 20);
-    });
+        setUp(() {
+            boy = new Person("NamVH");
+            boy.setAge(20);
+        });
+
+        test('TEST 1', () {
+            expect(boy.getName(), "NamVH");
+            expect(boy.getAge(), 20);
+        });
 
   });
 

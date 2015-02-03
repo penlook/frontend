@@ -1,7 +1,7 @@
 name: frontend
 version: 0.0.1
-description: |
-  Penlook Frontend Application
+author: penlook
+description: Penlook Frontend Application
 environment:
   sdk: '>=1.0.0 <2.0.0'
 dependencies:
