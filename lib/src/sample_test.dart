@@ -26,6 +26,15 @@ main() {
             expect(boy.getAge(), 20);
         });
 
+        setUp(() {
+            boy = new Person("harry james");
+            boy.setAge(44);
+        });
+
+        test('TEST 2', () {
+            expect(boy.getName(), "harry james");
+            expect(boy.getAge(), 44);
+        });
   });
 
 }
