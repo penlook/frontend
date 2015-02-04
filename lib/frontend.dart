@@ -7,5 +7,5 @@
 
 library frontend;
 
-export "src/sample.dart";
-
+//export "src/sample.dart";
+export "src/modules/header/event.dart";
