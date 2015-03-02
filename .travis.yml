@@ -1,13 +1,5 @@
-language: node_js
-node_js:
-- '0.11'
-before_install:
-- export DISPLAY=:99.0
-- ./scripts/travis/install.sh
-before_script:
-- mkdir -p $LOGS_DIR
-- ./scripts/travis/setup.sh
-script:
-- ./scripts/travis/build.sh
-after_success:
-- ./scripts/travis/after-success.sh
+language: dart
+dart:
+    - stable
+    - dev
+with_content_shell: true
