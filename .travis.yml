@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 language: dart
 dart:
     - stable
     - dev
 with_content_shell: true
+=======
+language: node_js
+node_js:
+    - "0.12"
+
+install:
+    - npm install
+
+
+>>>>>>> d52b8cec19e3e218df830125c709186f897af72a

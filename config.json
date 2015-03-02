@@ -1,0 +1,5 @@
+{
+	"webSecurityEnabled" : false,
+  	"localToRemoteUrlAccessEnabled" : true,
+  	"remoteDebuggerPort" : 9000
+}
