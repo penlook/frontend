@@ -5,14 +5,16 @@
  * Author : Loi Nguyen <loint@penlook.com>
  */
 
-import "dart:html";
-import "dart:js";
-import "package:frontend/frontend.dart";
+import 'package:angular/application_factory.dart';
+import 'package:di/annotations.dart';
 
-main() {
-    DivElement output = querySelector("#output");
-    Person boy = new Person("Vo Hoai Nam");
-    boy.setAge(20);
-    output.text = boy.getName() + " -- " + boy.getAge().toString();
-    context.callMethod("alert", ["Hello world"]);
+@Injectable()
+class Greeter {
+  String name;
+}
+
+void main() {
+    applicationFactory()
+        .rootContextType(Greeter)
+        .run();
 }
